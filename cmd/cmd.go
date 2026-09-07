@@ -3,10 +3,10 @@ package cmd
 import (
 	tea "charm.land/bubbletea/v2"
 	"github.com/spf13/cobra"
-	"gomodtui/cmd/package"
-	"gomodtui/cmd/search"
-	tuicmd "gomodtui/cmd/tui"
-	"gomodtui/internal/tui"
+	"github.com/FKouhai/gomodtui/cmd/package"
+	"github.com/FKouhai/gomodtui/cmd/search"
+	tuicmd "github.com/FKouhai/gomodtui/cmd/tui"
+	"github.com/FKouhai/gomodtui/internal/tui"
 )
 
 // NewRootCommand creates a fresh root command instance.

@@ -3,7 +3,7 @@ package main
 import (
 	"os"
 
-	"gomodtui/cmd"
+	"github.com/FKouhai/gomodtui/cmd"
 )
 
 func main() {

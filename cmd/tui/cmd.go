@@ -1,7 +1,7 @@
 package tui
 
 import (
-	"gomodtui/internal/tui"
+	"github.com/FKouhai/gomodtui/internal/tui"
 
 	tea "charm.land/bubbletea/v2"
 	"github.com/spf13/cobra"

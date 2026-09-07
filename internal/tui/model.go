@@ -7,7 +7,7 @@ import (
 	"strings"
 	"time"
 
-	"gomodtui/svc/pkggodev"
+	"github.com/FKouhai/gomodtui/svc/pkggodev"
 
 	"charm.land/bubbles/v2/list"
 	"charm.land/bubbles/v2/textinput"

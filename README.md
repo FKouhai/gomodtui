@@ -1,6 +1,8 @@
 # gomodtui
 
-Browser-like TUI and CLI for [`pkg.go.dev`](https://pkg.go.dev) — search packages, view docs as markdown, and filter symbols without leaving the terminal. Built with [`charm.land/bubbletea/v2`](https://github.com/charmbracelet/bubbletea) and [`glamour`](https://github.com/charmbracelet/glamour).
+Browser-like TUI and CLI for [`pkg.go.dev`](https://pkg.go.dev), search packages, view docs as markdown, and filter symbols without leaving the terminal.
+
+Built with [`charm.land/bubbletea/v2`](https://github.com/charmbracelet/bubbletea) and [`glamour`](https://github.com/charmbracelet/glamour).
 
 ![Go 1.27.1](https://img.shields.io/badge/go-1.27.1-00ADD8) ![Nix](https://img.shields.io/badge/nix-flake-5277C3)
 
@@ -8,9 +10,9 @@ Browser-like TUI and CLI for [`pkg.go.dev`](https://pkg.go.dev) — search packa
 
 * **Search** `pkg.go.dev` via official `GET /v1/search`
 * **Package docs** via `GET /v1/package/{path}` rendered as markdown with `chroma` highlight (`dark` style)
-* **Symbols** via `GET /v1/symbols/{path}` — filterable list (`s` in detail view, debounced)
-* **Browser TUI** — independent full-screen panes for readability in tmux vertical splits, `hjkl` + mouse wheel, back stack (`esc`/`b`/`h`), no split cramping
-* **CLI** — `search`, `package` (`get` alias), `tui`
+* **Symbols** via `GET /v1/symbols/{path}` -> filterable list (`s` in detail view, debounced)
+* **Browser TUI** -> independent full-screen panes for readability in tmux vertical splits, `hjkl` + mouse wheel, back stack (`esc`/`b`/`h`), no split cramping
+* **CLI** -> `search`, `package` (`get` alias), `tui`
 
 ## Prerequisites
 
@@ -114,7 +116,7 @@ gomodtui get charm.land/bubbletea/v2 --version v2.0.9
 
 **TUI keys**
 
-* `type` in top input → debounced search (300ms) → `↑↓`/`hjkl` navigate list → `enter` view docs (full-screen independent pane)
+* `type` in top input -> debounced search (300ms) -> `↑↓`/`hjkl` navigate list -> `enter` view docs (full-screen independent pane)
 * Detail: `s` filter symbols, type to filter (120ms debounce, jumps to first match), `esc` clear filter, `hjkl`/`PgUp`/`wheel` scroll, `esc`/`b`/`h` back without exiting, `q`/`ctrl+c` quit, `/` focus search
 
 ## Development

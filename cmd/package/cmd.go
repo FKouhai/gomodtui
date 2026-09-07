@@ -7,7 +7,7 @@ import (
 	"net/http"
 	"time"
 
-	"gomodtui/svc/pkggodev"
+	"github.com/FKouhai/gomodtui/svc/pkggodev"
 
 	"github.com/spf13/cobra"
 )

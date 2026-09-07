@@ -1,4 +1,4 @@
-module gomodtui
+module github.com/FKouhai/gomodtui
 
 go 1.27.1
 
